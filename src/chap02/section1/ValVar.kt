@@ -7,5 +7,8 @@ fun main() {
     language = "English" //var 키워드로 선언한 변수는 값을 다시 할당할수 있음
 
     println("number: $number")
+    println("language: $language")
+    println("secondNumber: $secondNumber")
 
 }
+
