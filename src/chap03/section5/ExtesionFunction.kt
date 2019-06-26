@@ -1,4 +1,4 @@
-package chap03.section5.noinline
+package chap03.section5
 
 fun main() {
     val source = "Hello World!"
