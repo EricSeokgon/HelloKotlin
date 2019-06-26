@@ -1,4 +1,4 @@
-package chap03.section4.noinline
+package chap03.section5.noinline
 
 fun main() {
     shortFunc(3) { println("First call: $it") }
