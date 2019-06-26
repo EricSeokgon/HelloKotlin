@@ -1,12 +1,14 @@
 package chap03.section6
 
-fun a() = b()
-fun b() = println("b")
+fun main() {
+    fun secondFunc(a: Int) {
 
-fun c() {
-    fun e() = println("e")
+    }
+
+    userFunc(4)
+    secondFunc(2)
 }
 
-fun main() {
-    a()
+fun userFunc(count: Int) {
+
 }
