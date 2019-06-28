@@ -17,6 +17,10 @@ class Child : Base() {
             println("[Inside] super@Child.x: ${super@Child.x}") //Base의 x접근
         }
     }
+}
 
+fun main() {
+    val c1 = Child()
+    c1.Inside().test() //이너 클래스 Inside의 매서드 test() 실행
 }
 
