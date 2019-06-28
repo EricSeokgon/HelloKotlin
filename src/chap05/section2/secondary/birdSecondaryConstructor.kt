@@ -1,30 +1,45 @@
 package chap05.section2.secondary
 
+// 주생성자가 없고 여러개의 부 생성자를 가진 클래스
 class Bird {
-    //1프로퍼티 선언만 함
+    //프로퍼티
     var name: String
     var wing: Int
     var brek: String
     var color: String
 
-    //2부 생성자 - 매개변수를 통해 초기화할 프로퍼티에 지정
-    constructor(name: String, wing: Int, brek: String, color: String) {
-        this.name = name //3 this.name은 성언된 현재 클래스의 프로퍼티를 나타냄
-        this.wing = wing
-        this.brek = brek
-        this.color = color
+    //첫 번째 부 생성자
+    constructor(_name: String, _wing: Int, _brek: String, _color: String) {
+        name = _name
+        wing = _wing
+        brek = _brek
+        color = _color
+    }
+
+    //두 번째 부 생성자
+    constructor(_name: String, _brek: String) {
+        name = _name
+        wing = 2
+        brek = _brek
+        color = "grey"
     }
 
     //매서드
     fun fly() = println("Fly wing: $wing")
+
     fun sing(vol: Int) = println("Sing vol: $vol")
 }
 
 fun main() {
-    val coco = Bird("mybird", 2, "short","blue") //4 생성자의 인자로 객체 생성과 동시에 초기화
+    val bird1 = Bird("mybird", 2, "short", "blue") //첫번째 부 생성자 호출
+    val bird2 = Bird("mybird2", "long") //두번째 부 생성자 호출
 
-    coco.color = "yellow" //5객체의 프로퍼티에 값 할당
-    println("coco.color: ${coco.color}")
-    coco.fly()
-    coco.sing(3)
+    bird1.color = "yellow" //5객체의 프로퍼티에 값 할당
+    println("bird1.color: ${bird1.color}")
+    bird1.fly()
+    bird1.sing(1)
+    println()
+    println("bird2.color: ${bird2.color}")
+    bird2.fly()
+    bird2.sing(2)
 }
