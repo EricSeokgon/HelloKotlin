@@ -1,7 +1,13 @@
-package chap05.section2.primary
+package chap05.section2.init
 
 class Bird(var name: String, var wing: Int, var beak: String, var color: String) {
-    // 프로퍼티는 매개변수 안에 var를 사용해 프로퍼티로서 선언되어 본문에서 생략됨
+    // 초기화
+    init{
+        println("----------초기화 블록 시작----------")
+        println("이름은 $name, 부리는 $beak")
+        this.sing(3)
+        println("----------초기화 블록 끝----------")
+    }
 
     //메서드
     fun fly() = println("Fly wing: $wing")
@@ -17,6 +23,7 @@ fun main() {
     coco.fly()
     coco.sing(3)
 }
+
 
 
 
