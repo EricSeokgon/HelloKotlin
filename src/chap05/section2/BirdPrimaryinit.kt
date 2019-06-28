@@ -2,13 +2,6 @@ package chap05.section2.init
 
 //프로퍼티의 기본값 지정
 class Bird(var name: String = "NONAME", var wing: Int = 2, var beak: String, var color: String) {
-    // 초기화
-    init {
-        println("----------초기화 블록 시작----------")
-        println("이름은 $name, 부리는 $beak")
-        this.sing(3)
-        println("----------초기화 블록 끝----------")
-    }
 
     //메서드
     fun fly() = println("Fly wing: $wing")
