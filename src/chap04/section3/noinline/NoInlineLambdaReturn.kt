@@ -5,13 +5,12 @@ fun main() {
 }
 
 fun retFunc() {
-
     println("start of retFunc")
-    inlineLambda(13, 3) { a, b ->
+    inlineLambda(13, 3, fun(a, b) {
         val result = a + b
-        if (result > 10) return@inlineLambda
+        if (result > 10) return
         println("result: $result")
-    }
+    }) // inlineLambda()의 끝부분
     println("end of retFunc")
 }
 
