@@ -7,8 +7,8 @@ fun main() {
 
     try {
         c = a / b //0으로 나눔
-    } catch (e: Exception) {
-        println("Exception is handled.")
+    } catch (e: ArithmeticException) {
+        println("Exception is handled. ${e.message}")
     }finally {
         println("finally 블록은 반드시 항상 실행됨")
     }
