@@ -1,4 +1,4 @@
-package chap05
+package chap05.section6.association
 
 class Patient(val name: String) {
     fun doctorList(d: Doctor) {
