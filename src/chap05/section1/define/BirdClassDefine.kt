@@ -9,7 +9,6 @@ class Bird { //1클래스의 정의
 
     //3메서드(함수)
     fun fly() = println("Fly wing:$wing")
-
     fun sing(vol: Int) = println("Sing vol: $vol")
 }
 
