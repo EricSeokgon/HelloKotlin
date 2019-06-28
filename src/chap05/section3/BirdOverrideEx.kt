@@ -18,7 +18,7 @@ class Parrot(name: String, wing: Int, beak: String, color: String, var language:
 ) {
     fun speak() = println("Speak! $language") //Parrot에 추가된 메서드
     override fun sing(vol: Int) { //오버라이딩된 메서드
-        println("I'm a parrot@ the volume level is $vol")
+        println("I'm a parrot! the volume level is $vol")
         speak()
     }
 }
