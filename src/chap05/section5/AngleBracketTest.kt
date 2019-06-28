@@ -1,4 +1,4 @@
-package chap05.section4
+package chap05.section5
 
 open class A {
     open fun f() = println("A Class f()")
