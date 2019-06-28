@@ -1,12 +1,13 @@
 package chap04.section3
 
 fun main() {
+    println("labelBreak")
     for (i in 1..5) {
-        if (i == 3) {
+        second@ for (j in 1..5) {
             if (i == 3) break
-            print(i)
+            print("i:$i, j:$j")
         }
-        println() //개행 문자
-        println("outside")
+        println("after for j")
     }
+    println("after for i")
 }
