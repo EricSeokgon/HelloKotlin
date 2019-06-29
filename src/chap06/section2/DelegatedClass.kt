@@ -1,4 +1,4 @@
-package chap06.section1
+package chap06.section2
 
 interface Car {
     fun go(): String
