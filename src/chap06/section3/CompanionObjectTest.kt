@@ -1,4 +1,4 @@
-package chap06.section2
+package chap06.section3
 
 class Person {
     var id: Int = 0
