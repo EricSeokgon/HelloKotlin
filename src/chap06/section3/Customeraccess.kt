@@ -1,5 +1,6 @@
 package chap06.section3
 
 fun main() {
-    println(Cu)
+    println(Customer.LEVEL)
+    Customer.login()
 }
