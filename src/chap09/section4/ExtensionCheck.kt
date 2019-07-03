@@ -8,4 +8,7 @@ fun main() {
     println(list.all { it < 10 })
     println(list.all { it % 2 == 0 })
 
+    println(list.any { it % 2 == 0 })
+    println(list.any { it < 10 })
+
 }
