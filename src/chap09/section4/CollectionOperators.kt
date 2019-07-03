@@ -14,6 +14,4 @@ fun main() {
     println(map1 - "hello") //일치하는 값의 제거
     println(map1 + mapOf("Apple" to 4, "Orange" to 5)) //두 Map의 병합
     println(map1 - listOf("hi", "hello")) //List에 일치하는 값을 Map에서 제거
-
-
 }
