@@ -14,5 +14,6 @@ fun main() = runBlocking<Unit> {
     }
     kotlinx.coroutines.delay(1000)
     sender.cancel()
+
 }
 
